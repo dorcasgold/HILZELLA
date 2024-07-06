@@ -5,7 +5,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Layout from './Layout.jsx'
 import Checkout from './pages/Checkout.jsx'
 import Cart from './pages/Cart.jsx'
-import Home from './pages/Home.jsx'
+import Home from './pages/home/Home.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
