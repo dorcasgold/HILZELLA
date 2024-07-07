@@ -418,12 +418,18 @@ function Products() {
               <p className='bg-black text-white px-2 py-2 cursor-pointer rounded-3xl hover:bg-orange-500 ease-in-out transition-all duration-200 '>Add to cart</p>
             </div>
           </div>
-
         </div>
 
+        <div className='my-8 flex flex-col gap-1 justify-center'>
+          <div>
+            <p className=' font-medium text-center'>Subscribe to our Newsletters for updates on on our services and exclusive offers</p>
+          </div>
+          <div className='flex gap-1 justify-center'>
+            <input type="email" required placeholder='Email Address' className='border-2 border-orange-600 px-4 py-2 w-[40rem]' />
+            <button className='bg-orange-600 px-4 py-3 font-semibold'>Subscribe</button>
+          </div>
+        </div>
       </div>
-
-
     </div>
   )
 }
