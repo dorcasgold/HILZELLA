@@ -74,7 +74,11 @@ function Categories() {
         </div>
 
         <div>
-          <img src={tablet} alt="tablet" className='w-[80%]' />
+          <LazyLoadImage
+            alt="tablet"
+            src={tablet}
+            effect="blur"
+          />
         </div>
 
       </div>

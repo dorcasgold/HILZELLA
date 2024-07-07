@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      scale: {
+        '125': '1.25',  // Adding custom scale value
+      }
+    },
   },
+  variants: {
+    extend: {
+      scale: ['group-hover'],  // Ensure group-hover variant is enabled for scale
+    }
+  },
+
   plugins: [],
 }
