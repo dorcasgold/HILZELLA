@@ -1,14 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
-import logo from '../assets/HILZELLA.png'
+import banner from '../assets/banner.svg'
+import logo from '../assets/Hilzella.svg'
 
 function Navbar() {
   return (
     <>
-      <div className='bg-black h-6'></div>
-      <nav className="px-10 py-3">
+      <div className='h-6'>
+        <img src={banner} alt="banner" className="w-full" />
+      </div>
+      <nav className="px-10 py-3 mt-10">
+
         <div className="flex justify-between items-center mx-28 h-12">
           <div className='w-32'>
             <NavLink to="/">

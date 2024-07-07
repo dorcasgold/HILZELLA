@@ -82,10 +82,10 @@ function Footer() {
                 <p className=' underline font-semibold'>Policies</p>
               </div>
               <div className='flex gap-1 items-center'>
-                <p>Privacy policy</p>
+                <p className='hover:text-orange-600 cursor-pointer'>Privacy policy</p>
               </div>
               <div className='flex gap-1 items-center'>
-                <p>Terms of Service</p>
+                <p className='hover:text-orange-600 cursor-pointer'>Terms of Service</p>
               </div>
             </div>
           </div>

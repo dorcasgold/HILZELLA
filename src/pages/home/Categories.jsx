@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import list from '../../assets/icons/list.svg'
@@ -24,11 +25,13 @@ function Categories() {
               <p className='bg-black h-10 w-8 rounded-r-2xl'></p>
             </div>
             <div className='flex gap-24 items-center'>
-              <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer'>
+              <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
                 <img src={personIcon} alt="personIcon" />
               </div>
-              <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer'>
-                <img src={shopIcon} alt="shopIcon" className='w-7' />
+              <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
+                <NavLink to="/cart">
+                  <img src={shopIcon} alt="shopIcon" className='w-7' />
+                </NavLink>
               </div>
             </div>
           </div>
