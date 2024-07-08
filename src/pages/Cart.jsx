@@ -165,34 +165,40 @@ function Cart() {
           </div>
           <img src={chatIcon} alt="chatIcon" className="w-14 absolute -bottom-4 -right-8 cursor-pointer" />
         </div>
-
-        <div className="border-[1px] border-slate-500 rounded-md flex flex-col my-4  py-5 mx-64">
-          <div>
-            <div className=" border-slate-500 border-b-[1px]">
-              <p className="font-semibold px-4 py-3">Cart Summary</p>
-            </div>
-            <div className="flex flex-col border-slate-500 border-b-[1px] py-3 gap-4 font-semibold">
-              <div className="flex justify-between px-4">
-                <p >Subtotal</p>
-                <p >$1554</p>
+        <div className="flex flex-col">
+          <div className="border-[1px] border-slate-500 rounded-md flex flex-col my-4  py-5 mx-64">
+            <div>
+              <div className=" border-slate-500 border-b-[1px]">
+                <p className="font-semibold px-4 py-3">Cart Summary</p>
               </div>
-              <div className="flex justify-between px-4">
-                <p >Delivery charges</p>
-                <p >$20</p>
+              <div className="flex flex-col border-slate-500 border-b-[1px] py-3 gap-4 font-semibold">
+                <div className="flex justify-between px-4">
+                  <p >Subtotal</p>
+                  <p >$1554</p>
+                </div>
+                <div className="flex justify-between px-4">
+                  <p >Delivery charges</p>
+                  <p >$20</p>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col py-3 gap-8 font-semibold">
-              <div className="flex justify-between px-4">
-                <p >Total charges</p>
-                <p >$1574</p>
-              </div>
-              <div className="flex justify-center gap-3">
-                <button className="bg-black text-orange-500 px-3 py-2 rounded-md hover:bg-slate-900 hover:text-white ease-in-out transition-all duration-400">Continue shopping</button>
-                <button className="bg-orange-500 text-black px-10 py-2 rounded-md hover:bg-orange-700 hover:text-white ease-in-out transition-all duration-400">Checkout</button>
+              <div className="flex flex-col py-3 gap-8 font-semibold">
+                <div className="flex justify-between px-4">
+                  <p >Total charges</p>
+                  <p >$1574</p>
+                </div>
+                <div className="flex justify-center gap-3">
+                  <button className="bg-black text-orange-500 px-3 py-2 rounded-md hover:bg-slate-900 hover:text-white ease-in-out transition-all duration-400">Continue shopping</button>
+                  <button className="bg-orange-500 text-black px-10 py-2 rounded-md hover:bg-orange-700 hover:text-white ease-in-out transition-all duration-400">Checkout</button>
+                </div>
               </div>
             </div>
           </div>
+          <div className='flex gap-1 justify-center mx-64'>
+            <input type="email" required placeholder='Email Address' className='border-2 border-orange-600 px-4 py-2 w-[40rem]' />
+            <button className='bg-orange-600 px-4 py-3 font-semibold'>Subscribe</button>
+          </div>
         </div>
+
       </div>
     </div>
   )
