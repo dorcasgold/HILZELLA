@@ -12,20 +12,22 @@ import tablet from '../../assets/products/tablet.svg'
 function Categories() {
   return (
     <div className='flex flex-col gray'>
-      <div className='orange px-4 w-full h-16 '>
-        <div className='top flex mx-28 gap-4 items-center'>
-          <div className='bg-black text-white flex justify-center items-center px-[26px] h-16'>
-            <img src={list} alt="list-icon" />
-            <p className='text-2xl font-semibold'>Categories</p>
-          </div>
-          <div className='flex gap-40'>
-            <div className=' flex items-center'>
-              <img src={search} alt="search" className='w-5 left-2 cursor-pointer translate-x-12' />
-              <input type="text" className='py-2 pl-14 px-7 rounded-l-2xl w-72 placeholder:pl-5 outline-none' placeholder='Enter your keyword' />
-              <p className='bg-black h-10 w-8 rounded-r-2xl'></p>
+      <div className='orange lg:px-4 w-full h-16 '>
+        <div className='top flex lg:mx-28 gap-0 lg:gap-4 items-center'>
+          <div className='lg:bg-black text-white flex justify-center items-center px-1 lg:px-[26px] h-16'>
+            <img src={list} alt="list-icon" className="block w-8" />
+            <div className="hidden lg:block">
+              <p className='text-2xl font-semibold '>Categories</p>
             </div>
-            <div className='flex gap-24 items-center'>
-              <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
+          </div>
+          <div className='flex gap-8 lg:gap-40'>
+            <div className=' flex items-center'>
+              <img src={search} alt="search" className='w-5 left-2 cursor-pointer translate-x-8 lg:translate-x-12' />
+              <input type="text" className='lg:py-2 py-1 lg:pl-14 px-7 rounded-2xl lg:rounded-r-none lg:rounded-l-2xl lg:w-72 w-40 placeholder:text-sm  placeholder:pl-5 outline-none' placeholder='Enter your keyword' />
+              <p className='bg-black h-10 w-8 rounded-r-2xl hidden lg:block'></p>
+            </div>
+            <div className='flex gap-14 items-center'>
+              <div className='bg-white hidden lg:block px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
                 <img src={personIcon} alt="personIcon" />
               </div>
               <div className='bg-white relative px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
@@ -39,7 +41,7 @@ function Categories() {
         </div>
       </div>
 
-      <div className='flex mx-32 '>
+      <div className='lg:flex mx-32 hidden'>
         <div className='bg-white '>
           <div className='flex flex-col w-56'>
             <div className='border-b-[1px] border-b-gray-500 py-3 px-4 font-semibold hover:text-orange-600 cursor-pointer'>

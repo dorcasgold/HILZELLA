@@ -7,10 +7,10 @@ import logo from '../assets/Hilzella.svg'
 function Navbar() {
   return (
     <>
-      <div className='h-6'>
-        <img src={banner} alt="banner" className="w-full" />
+      <div className='h-6  hidden lg:block'>
+        <img src={banner} alt="banner" className="w-ful" />
       </div>
-      <nav className="px-10 py-3 mt-10">
+      <nav className="px-10 py-3 mt-10 hidden lg:block">
 
         <div className="flex justify-between items-center mx-28 h-12">
           <div className='w-32'>

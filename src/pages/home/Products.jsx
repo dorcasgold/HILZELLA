@@ -21,16 +21,16 @@ import tb8 from '../../assets/products/Tb8.svg'
 
 function Products() {
   return (
-    <div className="mx-44">
+    <div className="lg:mx-44">
       <div className="flex flex-col gap-1">
         <div className="border-b-[1px] border-b-gray-500">
-          <p className="text-2xl font-semibold py-2">Top Products</p>
+          <p className="lg:text-2xl text-lg font-semibold py-2 px-1">Top Products</p>
         </div>
 
-        <div className="flex w-full justify-between my-2 items-center">
+        <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2">
           <div className=' relative'>
             <p className='orange text-white px-2 border-black rounded border-2 py-1 text-xs text-center absolute z-50'>NEW</p>
-            <div className='w-28 group '>
+            <div className='lg:w-28 w-20 group '>
               <LazyLoadImage
                 alt="Product"
                 src={tp1}
@@ -44,7 +44,7 @@ function Products() {
             </div>
             <div className=' text-center py-1'>
               <p className=' font-semibold'>$1199</p>
-              <p className='bg-black text-white px-2 py-2 cursor-pointer rounded-3xl hover:bg-orange-500 ease-in-out transition-all duration-200 '>Add to cart</p>
+              <p className='bg-black text-white px-2 py-2 cursor-pointer rounded-3xl hover:bg-orange-500 ease-in-out w-10 transition-all duration-200 '>Add to cart</p>
             </div>
           </div>
           <div>
