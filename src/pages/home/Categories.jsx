@@ -28,10 +28,11 @@ function Categories() {
               <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
                 <img src={personIcon} alt="personIcon" />
               </div>
-              <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
+              <div className='bg-white relative px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
                 <NavLink to="/cart">
                   <img src={shopIcon} alt="shopIcon" className='w-7' />
                 </NavLink>
+                <span className="absolute bg-green-700 text-white px-2 rounded-full top-0 -left-2">4</span>
               </div>
             </div>
           </div>

@@ -24,7 +24,9 @@ function Navbar() {
           </div>
           <div>
             <ul className='flex gap-28 text-xl font-bold'>
-              <li className='cursor-pointer  hover:text-orange-600 '>HOME</li>
+              <NavLink to='/'>
+                <li className='cursor-pointer  hover:text-orange-600 '>HOME</li>
+              </NavLink>
               <li className='cursor-pointer  hover:text-orange-600'>ABOUT</li>
               <li className='cursor-pointer  hover:text-orange-600'>BLOG</li>
               <li className='cursor-pointer  hover:text-orange-600'>SHOP</li>

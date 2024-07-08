@@ -33,10 +33,11 @@ function Cart() {
               <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
                 <img src={personIcon} alt="personIcon" />
               </div>
-              <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
+              <div className='bg-white relative px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
                 <NavLink to="/cart">
                   <img src={shopIcon} alt="shopIcon" className='w-7' />
                 </NavLink>
+                <span className="absolute bg-green-700 text-white px-2 rounded-full top-0 -left-2">4</span>
               </div>
             </div>
           </div>
@@ -187,8 +188,10 @@ function Cart() {
                   <p >$1574</p>
                 </div>
                 <div className="flex justify-center gap-3">
-                  <button className="bg-black text-orange-500 px-3 py-2 rounded-md hover:bg-slate-900 hover:text-white ease-in-out transition-all duration-400">Continue shopping</button>
-                  <button className="bg-orange-500 text-black px-10 py-2 rounded-md hover:bg-orange-700 hover:text-white ease-in-out transition-all duration-400">Checkout</button>
+                  <button className="bg-black text-orange-500 px-3 py-2 rounded-md hover:bg-slate-900 hover:text-white ease-in transition-colors duration-300">Continue shopping</button>
+                  <NavLink to='/checkout'>
+                    <button className="bg-orange-500 text-black px-10 py-2 rounded-md  hover:text-white ease-in transition-colors duration-300">Checkout</button>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -197,7 +200,7 @@ function Cart() {
             <div>
               <p className="text-xs text-center font-semibold">Subscribe to our Newsletters for updates on on our services and exclusive offers</p>
             </div>
-            <div className="flex">
+            <div className="flex gap-1">
               <input type="email" required placeholder='Email Address' className='border-2 border-orange-600 px-4 py-2 w-[40rem]' />
               <button className='bg-orange-600 px-4 py-3 font-semibold'>Subscribe</button>
             </div>
