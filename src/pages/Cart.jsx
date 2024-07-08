@@ -193,9 +193,15 @@ function Cart() {
               </div>
             </div>
           </div>
-          <div className='flex gap-1 justify-center mx-64'>
-            <input type="email" required placeholder='Email Address' className='border-2 border-orange-600 px-4 py-2 w-[40rem]' />
-            <button className='bg-orange-600 px-4 py-3 font-semibold'>Subscribe</button>
+          <div className='flex flex-col gap-1 justify-center mx-64'>
+            <div>
+              <p className="text-xs text-center font-semibold">Subscribe to our Newsletters for updates on on our services and exclusive offers</p>
+            </div>
+            <div className="flex">
+              <input type="email" required placeholder='Email Address' className='border-2 border-orange-600 px-4 py-2 w-[40rem]' />
+              <button className='bg-orange-600 px-4 py-3 font-semibold'>Subscribe</button>
+            </div>
+
           </div>
         </div>
 
