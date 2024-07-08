@@ -35,7 +35,7 @@ function Products() {
                 alt="Product"
                 src={tp1}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -53,7 +53,7 @@ function Products() {
                 alt="Product"
                 src={tp2}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -71,7 +71,7 @@ function Products() {
                 alt="Product"
                 src={tp3}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -89,7 +89,7 @@ function Products() {
                 alt="Product"
                 src={tp4}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -116,10 +116,10 @@ function Products() {
                 alt="Product"
                 src={p1}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
-            <div className='flex gap-1 py-1'>
+            <div className='flex gap-1 py-1 translate-x-2'>
               <img src={imStock} alt="imStock" className='w-4' />
               <p className='text-sm font-medium'>Samsung Galaxy A35</p>
             </div>
@@ -134,10 +134,10 @@ function Products() {
                 alt="Product"
                 src={p2}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
-            <div className='flex gap-1 py-1'>
+            <div className='flex gap-1 py-1 translate-x-2'>
               <img src={imStock} alt="imStock" className='w-4' />
               <p className='text-sm font-medium'>Nokia 110</p>
             </div>
@@ -152,7 +152,7 @@ function Products() {
                 alt="Product"
                 src={p3}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -170,7 +170,7 @@ function Products() {
                 alt="Product"
                 src={p4}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -193,7 +193,7 @@ function Products() {
                 alt="Product"
                 src={tp4}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -212,7 +212,7 @@ function Products() {
                 alt="Product"
                 src={p7}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -230,7 +230,7 @@ function Products() {
                 alt="Product"
                 src={p6}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -248,7 +248,7 @@ function Products() {
                 alt="Product"
                 src={p5}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -276,7 +276,7 @@ function Products() {
                 alt="Product"
                 src={tb1}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -294,7 +294,7 @@ function Products() {
                 alt="Product"
                 src={tb2}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -312,7 +312,7 @@ function Products() {
                 alt="Product"
                 src={tb3}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -330,7 +330,7 @@ function Products() {
                 alt="Product"
                 src={tp2}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -351,7 +351,7 @@ function Products() {
                 alt="Product"
                 src={tb3}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -369,7 +369,7 @@ function Products() {
                 alt="Product"
                 src={tb5}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -388,7 +388,7 @@ function Products() {
                 alt="Product"
                 src={tb8}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -406,7 +406,7 @@ function Products() {
                 alt="Product"
                 src={tp3}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>

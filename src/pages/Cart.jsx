@@ -47,8 +47,10 @@ function Cart() {
         </div>
       </div>
       <div className="px-2 orange py-4 font-semibold flex flex-col gap-2 lg:hidden">
-        <div className="flex gap-3">
-          <img src={blackArrow} alt="arrowIcon" className="w-3" />
+        <div className="flex gap-3 px-2">
+          <NavLink to='/'>
+            <img src={blackArrow} alt="arrowIcon" className="w-3" />
+          </NavLink>
           <p>Continue shopping</p>
         </div>
         <div>
@@ -90,7 +92,7 @@ function Cart() {
                   <p className="text-xs text-gray-500">Product Code: <span className="text-black font-semibold">560203</span></p>
                 </div>
               </div>
-              <div className="flex gap-32 items-center">
+              <div className="md:flex hidden gap-32 items-center">
                 <div className="flex gap-2 items-center font-semibold rounded-lg">
                   <button className="gray rounded-tl-md rounded-bl-md  px-3 py-1" onClick={() => setCount1(count1 - 1)}>-</button>
                   <p>{count1}</p>
@@ -122,7 +124,7 @@ function Cart() {
                   <p className="text-gray-500 font-semibold">Apple Iphone 15 Pro-Black</p>
                 </div>
               </div>
-              <div className="flex gap-32 items-center">
+              <div className="gap-32 md:flex hidden items-center">
                 <div className="flex gap-2 items-center font-semibold rounded-lg">
                   <button className="gray rounded-tl-md rounded-bl-md  px-3 py-1" onClick={() => setCount2(count2 - 1)}>-</button>
                   <p>{count2}</p>
@@ -154,7 +156,7 @@ function Cart() {
                   <p className="text-gray-500 font-semibold">Digital Kitchen Scale</p>
                 </div>
               </div>
-              <div className="flex gap-32 items-center">
+              <div className="md:flex hidden gap-32 items-center">
                 <div className="flex gap-2 items-center font-semibold rounded-lg">
                   <button className="gray rounded-tl-md rounded-bl-md  px-3 py-1" onClick={() => setCount3(count3 - 1)}>-</button>
                   <p>{count3}</p>
@@ -175,10 +177,10 @@ function Cart() {
               </div>
             </div>
           </div>
-          <img src={chatIcon} alt="chatIcon" className="w-14 absolute -bottom-4 -right-8 cursor-pointer" />
+          <img src={chatIcon} alt="chatIcon" className="w-14 absolute -bottom-4 lg:-right-8 -right-1 cursor-pointer" />
         </div>
         <div className="flex flex-col">
-          <div className="border-[1px] border-slate-500 rounded-md flex flex-col my-4  py-5 mx-64">
+          <div className="border-[1px] border-slate-500 rounded-md flex flex-col my-4  py-5 lg:mx-64 mx-4">
             <div>
               <div className=" border-slate-500 border-b-[1px]">
                 <p className="font-semibold px-4 py-3">Cart Summary</p>
@@ -199,15 +201,16 @@ function Cart() {
                   <p >$1574</p>
                 </div>
                 <div className="flex justify-center gap-3">
-                  <button className="bg-black text-orange-500 px-3 py-2 rounded-md hover:bg-slate-900 hover:text-white ease-in transition-colors duration-300">Continue shopping</button>
+                  <button className="bg-black text-orange-500 px-3 hidden lg:block py-2 rounded-md hover:bg-slate-900 hover:text-white ease-in transition-colors duration-300">Continue shopping</button>
                   <NavLink to='/checkout'>
-                    <button className="bg-orange-500 text-black px-10 py-2 rounded-md  hover:text-white ease-in transition-colors duration-300">Checkout</button>
+                    <button className="bg-orange-500 text-black px-10 py-2 rounded-md hidden lg:block  hover:text-white ease-in transition-colors duration-300">Checkout</button>
+                    <button className="bg-black text-orange-500 px-10 py-2 rounded-md  block lg:hidden hover:text-white ease-in transition-colors duration-300">Checkout</button>
                   </NavLink>
                 </div>
               </div>
             </div>
           </div>
-          <div className='flex flex-col gap-1 justify-center mx-64'>
+          <div className='lg:flex flex-col gap-1 justify-center hidden mx-64'>
             <div>
               <p className="text-xs text-center font-semibold">Subscribe to our Newsletters for updates on on our services and exclusive offers</p>
             </div>
