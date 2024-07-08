@@ -193,7 +193,10 @@ function Checkout() {
                       <button>+</button>
                     </div>
                     <div>
-                      <input type="text" placeholder='**** **** **** 9947' className="border-[1px] border-gray-500 py-1 rounded-l-none rounded-md px-3 w-44 outline-none" />
+                      <input type="text" placeholder='YN007' className="border-[1px] border-gray-500 py-1 rounded-l-none rounded-md px-3 w-28 outline-none" />
+                    </div>
+                    <div className='ml-2'>
+                      <button className='bg-black text-orange-600 px-4 py-1 rounded-md'>Apply</button>
                     </div>
                   </div>
                 </div>
@@ -201,6 +204,16 @@ function Checkout() {
             </div>
             <div>
               <img src={chat} alt="chat" className="w-11 cursor-pointer" />
+            </div>
+          </div>
+          <div className='flex justify-center flex-col ml-20 gap-2'>
+            <div className='mx-80 cursor-pointer'>
+              <p className='bg-orange-600 px-3 w-32 py-2 rounded-md text-center'>Payment</p>
+            </div>
+            <p className='ml-14'>Subscribe to our Newsletters for updates on on our services and exclusive offers</p>
+            <div className="flex gap-1">
+              <input type="email" required placeholder='Email Address' className='border-2 border-orange-600 px-4 py-2 w-[40rem]' />
+              <button className='bg-orange-600 px-4 py-3 font-semibold'>Subscribe</button>
             </div>
           </div>
         </div>
