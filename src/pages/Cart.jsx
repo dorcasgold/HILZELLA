@@ -10,6 +10,7 @@ import tp1 from '../assets/products/TP1.svg'
 import scale from '../assets/products/scale.svg'
 import chatIcon from '../assets/icons/Chat Bubble.svg'
 import { useState } from "react";
+import blackArrow from '../assets/icons/black-arrow.svg'
 
 function Cart() {
   const [count1, setCount1] = useState(3)
@@ -17,20 +18,22 @@ function Cart() {
   const [count3, setCount3] = useState(2)
   return (
     <div className="flex flex-col">
-      <div className='orange px-4 w-full h-16 '>
-        <div className='top flex mx-28 gap-4 items-center'>
-          <div className='bg-black text-white flex justify-center items-center px-[26px] h-16'>
-            <img src={list} alt="list-icon" />
-            <p className='text-2xl font-semibold'>Categories</p>
-          </div>
-          <div className='flex gap-40'>
-            <div className=' flex items-center'>
-              <img src={search} alt="search" className='w-5 left-2 cursor-pointer translate-x-12' />
-              <input type="text" className='py-2 pl-14 px-7 rounded-l-2xl w-72 placeholder:pl-5 outline-none' placeholder='Enter your keyword' />
-              <p className='bg-black h-10 w-8 rounded-r-2xl'></p>
+      <div className='orange lg:flex hidden px-4 w-full h-16 '>
+        <div className='top flex lg:mx-28 gap-0 lg:gap-4 items-center'>
+          <div className='lg:bg-black text-white flex justify-center items-center px-1 lg:px-[26px] h-16'>
+            <img src={list} alt="list-icon" className="block w-8" />
+            <div className="hidden lg:block">
+              <p className='text-2xl font-semibold '>Categories</p>
             </div>
-            <div className='flex gap-24 items-center'>
-              <div className='bg-white px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
+          </div>
+          <div className='flex gap-8 lg:gap-40'>
+            <div className=' flex items-center'>
+              <img src={search} alt="search" className='w-5 left-2 cursor-pointer translate-x-8 lg:translate-x-12' />
+              <input type="text" className='lg:py-2 py-1 lg:pl-14 px-7 rounded-2xl lg:rounded-r-none lg:rounded-l-2xl lg:w-72 w-56 placeholder:text-sm  placeholder:pl-5 outline-none' placeholder='Enter your keyword' />
+              <p className='bg-black h-10 w-8 rounded-r-2xl hidden lg:block'></p>
+            </div>
+            <div className='flex gap-14 items-center'>
+              <div className='bg-white hidden lg:block px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
                 <img src={personIcon} alt="personIcon" />
               </div>
               <div className='bg-white relative px-2 py-2 rounded-3xl cursor-pointer transition-all duration-300 ease-in transform hover:bg-orange-600'>
@@ -43,19 +46,27 @@ function Cart() {
           </div>
         </div>
       </div>
-
-      <div className="mx-32 my-5 flex flex-col">
+      <div className="px-2 orange py-4 font-semibold flex flex-col gap-2 lg:hidden">
+        <div className="flex gap-3">
+          <img src={blackArrow} alt="arrowIcon" className="w-3" />
+          <p>Continue shopping</p>
+        </div>
+        <div>
+          <p className="px-6 text-3xl font-bold">My Cart</p>
+        </div>
+      </div>
+      <div className="lg:mx-32 lg:my-5 flex flex-col">
         <div className="flex flex-col gap-2 relative">
-          <div className="flex gap-3 font-semibold">
+          <div className="lg:flex gap-3 font-semibold hidden">
             <NavLink to='/'>
-              <p className=" cursor-pointer hover:text-orange-600">HOME</p>
+              <p className=" cursor-pointer hover:text-orange-600 px-3">HOME</p>
             </NavLink>
             <img src={arrowIcon} alt="arrowIcon" className="w-3" />
             <p className="text-orange-600 cursor-pointer">My Shopping Cart</p>
           </div>
 
           <div className="border-[1px] border-slate-500 rounded-md flex flex-col">
-            <div className="flex gap-40 my-2 border-b-slate-500  border-b-[1px] px-10 py-4">
+            <div className="lg:flex hidden gap-40 my-2 border-b-slate-500  border-b-[1px] px-10 py-4">
               <div>
                 <p className="font-semibold">Item details</p>
               </div>

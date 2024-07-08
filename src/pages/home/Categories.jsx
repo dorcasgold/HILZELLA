@@ -23,7 +23,7 @@ function Categories() {
           <div className='flex gap-8 lg:gap-40'>
             <div className=' flex items-center'>
               <img src={search} alt="search" className='w-5 left-2 cursor-pointer translate-x-8 lg:translate-x-12' />
-              <input type="text" className='lg:py-2 py-1 lg:pl-14 px-7 rounded-2xl lg:rounded-r-none lg:rounded-l-2xl lg:w-72 w-40 placeholder:text-sm  placeholder:pl-5 outline-none' placeholder='Enter your keyword' />
+              <input type="text" className='lg:py-2 py-1 lg:pl-14 px-7 rounded-2xl lg:rounded-r-none lg:rounded-l-2xl lg:w-72 w-56 placeholder:text-sm  placeholder:pl-5 outline-none' placeholder='Enter your keyword' />
               <p className='bg-black h-10 w-8 rounded-r-2xl hidden lg:block'></p>
             </div>
             <div className='flex gap-14 items-center'>

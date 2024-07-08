@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import logo from '../assets/Logo.svg'
 import phone from '../assets/icons/phone.svg'
 import map from '../assets/icons/location.svg'
@@ -6,11 +7,15 @@ import InstagramIcon from '../assets/icons/Instagram.svg'
 import FacebookIcon from '../assets/icons/Facebook.svg'
 import TwitterIcon from '../assets/icons/Twitter.svg'
 import TikTokIcon from '../assets/icons/TikTok.svg'
+import home from '../assets/icons/home.svg'
+import profile from '../assets/icons/profile.svg'
+import chat from '../assets/icons/chat-ft.svg'
+import cart from '../assets/icons/Vector.svg'
 
 function Footer() {
   return (
-    <footer className="bg-black px-5 py-14 text-white">
-      <div className="flex items-center flex-col gap-2 mx-8">
+    <footer className="lg:bg-black lg:px-5 py-14 text-white ">
+      <div className=" items-center flex-col gap-2 mx-8 lg:flex hidden">
         <div className='grid grid-cols-4 gap-x-2 place-content-center'>
           <div className='flex items-center px-2'>
             <div>
@@ -96,6 +101,17 @@ function Footer() {
         </div>
       </div>
 
+      <div className='flex justify-between border-[1px] border-gray-600 py-3 px-5'>
+        <NavLink to='/'>
+          <img src={home} alt="home-icon" className='w-8' />
+        </NavLink>
+
+        <img src={profile} alt="profile-icon" className='w-8' />
+        <img src={chat} alt="chat-icon" className='w-8' />
+        <NavLink to='/cart'>
+          <img src={cart} alt="cart-icon" className='w-8' />
+        </NavLink>
+      </div>
     </footer>
   )
 }

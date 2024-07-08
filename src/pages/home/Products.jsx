@@ -27,10 +27,10 @@ function Products() {
           <p className="lg:text-2xl text-lg font-semibold py-2 px-1">Top Products</p>
         </div>
 
-        <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2">
+        <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2 gap-x-2 mx-1">
           <div className=' relative'>
             <p className='orange text-white px-2 border-black rounded border-2 py-1 text-xs text-center absolute z-50'>NEW</p>
-            <div className='lg:w-28 w-20 group '>
+            <div className='lg:w-28 w-16 group '>
               <LazyLoadImage
                 alt="Product"
                 src={tp1}
@@ -44,11 +44,11 @@ function Products() {
             </div>
             <div className=' text-center py-1'>
               <p className=' font-semibold'>$1199</p>
-              <p className='bg-black text-white px-2 py-2 cursor-pointer rounded-3xl hover:bg-orange-500 ease-in-out w-10 transition-all duration-200 '>Add to cart</p>
+              <p className='bg-black text-white px-2 py-2 cursor-pointer rounded-3xl hover:bg-orange-500 ease-in-out  transition-all duration-200 '>Add to cart</p>
             </div>
           </div>
           <div>
-            <div className='w-28 group'>
+            <div className='lg:w-28 w-16 group'>
               <LazyLoadImage
                 alt="Product"
                 src={tp2}
@@ -66,7 +66,7 @@ function Products() {
             </div>
           </div>
           <div>
-            <div className='w-28 group'>
+            <div className='lg:w-28 w-16 group'>
               <LazyLoadImage
                 alt="Product"
                 src={tp3}
@@ -84,7 +84,7 @@ function Products() {
             </div>
           </div>
           <div>
-            <div className='w-28 group'>
+            <div className='lg:w-28 w-16 group'>
               <LazyLoadImage
                 alt="Product"
                 src={tp4}
@@ -109,7 +109,7 @@ function Products() {
           <p className="text-2xl font-semibold py-2">Phones</p>
         </div>
 
-        <div className="flex w-full justify-between my-2 items-center">
+        <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2 gap-x-2 mx-1">
           <div>
             <div className='w-28 group '>
               <LazyLoadImage
@@ -186,7 +186,7 @@ function Products() {
 
         </div>
 
-        <div className="flex w-full justify-between my-2 items-center">
+        <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2 gap-x-2 mx-1">
           <div>
             <div className='w-28 group '>
               <LazyLoadImage
@@ -269,7 +269,7 @@ function Products() {
           <p className="text-2xl font-semibold py-2">Tablets</p>
         </div>
 
-        <div className="flex w-full justify-between my-2 items-center">
+        <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2 gap-x-2 mx-1">
           <div>
             <div className='w-28 group '>
               <LazyLoadImage
@@ -344,7 +344,7 @@ function Products() {
           </div>
         </div>
 
-        <div className="flex w-full justify-between my-2 items-center">
+        <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2 gap-x-2 mx-1">
           <div>
             <div className='w-28 group '>
               <LazyLoadImage
@@ -420,7 +420,7 @@ function Products() {
           </div>
         </div>
 
-        <div className='my-8 flex flex-col gap-1 justify-center'>
+        <div className='my-8 lg:flex flex-col gap-1 justify-center hidden'>
           <div>
             <p className=' font-medium text-center'>Subscribe to our Newsletters for updates on on our services and exclusive offers</p>
           </div>
