@@ -10,9 +10,9 @@ function Navbar() {
       <div className='h-6  hidden md:block'>
         <img src={banner} alt="banner" className="w-ful" />
       </div>
-      <nav className="px-10 py-3 mt-10 hidden md:block">
+      <nav className="px-10 py-1 mt-10 hidden md:block">
 
-        <div className="flex justify-between items-center lg:mx-28 mx-20 h-12">
+        <div className="flex justify-between items-center translate-y-2 lg:mx-28 mx-20 h-12">
           <div className='w-32'>
             <NavLink to="/">
               <LazyLoadImage
@@ -23,7 +23,7 @@ function Navbar() {
             </NavLink>
           </div>
           <div>
-            <ul className='flex gap-28 text-lg font-medium'>
+            <ul className='flex gap-28 text-base font-medium'>
               <NavLink to='/'>
                 <li className='cursor-pointer  hover:text-orange-600 '>HOME</li>
               </NavLink>

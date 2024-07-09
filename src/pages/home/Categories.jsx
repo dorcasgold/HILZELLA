@@ -17,7 +17,7 @@ function Categories() {
           <div className='md:bg-black text-white flex justify-center items-center px-1 md:px-[26px] h-16'>
             <img src={list} alt="list-icon" className="block w-8" />
             <div className="hidden md:block">
-              <p className='text-2xl font-semibold '>Categories</p>
+              <p className='text-base font-semibold '>Categories</p>
             </div>
           </div>
           <div className='flex gap-8 lg:gap-[20rem] md:gap-3'>
