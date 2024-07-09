@@ -67,8 +67,8 @@ function Cart() {
             <p className="text-orange-600 cursor-pointer">My Shopping Cart</p>
           </div>
 
-          <div className="border-[1px] border-slate-500 rounded-md flex flex-col">
-            <div className="lg:flex hidden gap-40 my-2 border-b-slate-500  border-b-[1px] px-10 py-4">
+          <div className="lg:border-[1px] border-b-4 border-slate-800 rounded-md flex flex-col">
+            <div className="lg:flex hidden gap-40 my-2 border-b-slate-800 border-b-2 lg:border-b-[1px] px-10 py-4">
               <div>
                 <p className="font-semibold">Item details</p>
               </div>
@@ -82,7 +82,7 @@ function Cart() {
                 <p className="font-semibold">Total Price</p>
               </div>
             </div>
-            <div className="flex items-center gap-10 border-b-slate-500 py-2 border-b-[1px]">
+            <div className="flex items-center gap-10 border-b-slate-800 py-2 border-b-4 lg:border-b-[1px]">
               <div className="flex items-center px-4">
                 <div>
                   <img src={lipstick} alt="lipstick-img" className="w-20" />
@@ -115,7 +115,7 @@ function Cart() {
 
             </div>
 
-            <div className="flex items-center gap-10 border-b-slate-500 py-2 border-b-[1px]">
+            <div className="flex items-center gap-10 border-b-slate-800 py-2 border-b-4 lg:border-b-[1px]">
               <div className="flex items-center px-4">
                 <div>
                   <img src={tp1} alt="product-img" className="w-20" />
@@ -177,15 +177,15 @@ function Cart() {
               </div>
             </div>
           </div>
-          <img src={chatIcon} alt="chatIcon" className="w-14 absolute -bottom-4 lg:-right-8 -right-1 cursor-pointer" />
+          <img src={chatIcon} alt="chatIcon" className="w-14 absolute -bottom-4 lg:-right-8 -right-1 cursor-pointer hidden lg:flex" />
         </div>
         <div className="flex flex-col">
-          <div className="border-[1px] border-slate-500 rounded-md flex flex-col my-4  py-5 lg:mx-64 mx-4">
+          <div className="border-[1px] border-slate-800 rounded-md flex flex-col my-4  py-5 lg:mx-64 mx-4">
             <div>
-              <div className=" border-slate-500 border-b-[1px]">
+              <div className=" border-slate-800 border-b-4 lg:border-b-[1px]">
                 <p className="font-semibold px-4 py-3">Cart Summary</p>
               </div>
-              <div className="flex flex-col border-slate-500 border-b-[1px] py-3 gap-4 font-semibold">
+              <div className="flex flex-col border-slate-800 border-b-[1px] py-3 gap-4 font-semibold">
                 <div className="flex justify-between px-4">
                   <p >Subtotal</p>
                   <p >$1554</p>

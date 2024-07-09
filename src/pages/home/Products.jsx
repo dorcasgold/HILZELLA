@@ -21,7 +21,7 @@ import tb8 from '../../assets/products/Tb8.svg'
 
 function Products() {
   return (
-    <div className="lg:mx-44">
+    <div className="lg:mx-44 overflow-x-hidden">
       <div className="flex flex-col gap-1">
         <div className="border-b-[1px] border-b-gray-500">
           <p className="lg:text-2xl text-lg font-semibold py-2 px-1">Top Products</p>
@@ -29,13 +29,13 @@ function Products() {
 
         <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2 gap-x-2 mx-1">
           <div className=' relative'>
-            <p className='orange text-white px-2 border-black rounded border-2 py-1 text-xs text-center absolute z-50 md:translate-x-36 lg:translate-x-0'>NEW</p>
+            <p className='orange text-white px-2 border-black rounded border-2 py-1 text-xs text-center absolute z-50 translate-x-10 md:translate-x-36 lg:translate-x-0'>NEW</p>
             <div className='lg:w-28 w-16 group '>
               <LazyLoadImage
                 alt="Product"
                 src={tp1}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-40 lg:translate-x-0'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-14 md:translate-x-40 lg:translate-x-0'
               />
             </div>
             <div className='flex gap-1 py-1 md:translate-x-20 lg:translate-x-0'>
@@ -53,7 +53,7 @@ function Products() {
                 alt="Product"
                 src={tp2}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-40 lg:translate-x-0'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-14 md:translate-x-40 lg:translate-x-0'
               />
             </div>
             <div className='flex gap-1 py-1 md:translate-x-20 lg:translate-x-0'>
@@ -71,7 +71,7 @@ function Products() {
                 alt="Product"
                 src={tp3}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-40 lg:translate-x-0'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-14 md:translate-x-40 lg:translate-x-0'
               />
             </div>
             <div className='flex gap-1 py-1 md:translate-x-20 lg:translate-x-0'>
@@ -89,7 +89,7 @@ function Products() {
                 alt="Product"
                 src={tp4}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-40 lg:translate-x-0'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-14 md:translate-x-40 lg:translate-x-0'
               />
             </div>
             <div className='flex gap-1 py-1 md:translate-x-20 lg:translate-x-0'>
