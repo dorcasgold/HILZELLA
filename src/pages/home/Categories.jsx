@@ -47,7 +47,7 @@ function Categories() {
             <div className='border-b-[1px] border-b-gray-500 py-3 px-4 font-semibold hover:text-orange-600 cursor-pointer'>
               <p>Smart Wristwatch</p>
             </div>
-            <div className='border-b-[1px] border-b-gray-500 py-3 px-2  font-semibold text-orange-600 cursor-pointer flex gap-5'>
+            <div className='border-b-[1px] border-b-gray-500 py-3 px-2  font-semibold text-orange-600 cursor-pointer flex gap-3 translate-x-3'>
               <p>Phones and Tablets</p>
               <img src={arrowIcon} alt="arrowIcon" className='w-3' />
             </div>
