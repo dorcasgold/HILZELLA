@@ -150,7 +150,7 @@ function Checkout() {
               <p>Full name (First and Last name)</p>
             </div>
             <div>
-              <input type="text" placeholder="Hailey Shipman" className="border-[1px] border-gray-500 px-3 py-2 w-[23rem] lg:w-[56rem] rounded-2xl" />
+              <input type="text" placeholder="Hailey Shipman" className="border-[1px] border-gray-500 px-3 py-2 w-[23rem]  md:w-[46rem] lg:w-[56rem] rounded-2xl" />
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -158,7 +158,7 @@ function Checkout() {
               <p>Phone number</p>
             </div>
             <div>
-              <input type="text" placeholder="+1 (346) 972-8012" className="border-[1px] border-gray-500 px-3 py-2 w-[23rem] lg:w-[56rem] rounded-2xl" />
+              <input type="text" placeholder="+1 (346) 972-8012" className="border-[1px] border-gray-500 px-3 py-2 w-[23rem] md:w-[46rem] lg:w-[56rem] rounded-2xl" />
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -166,8 +166,8 @@ function Checkout() {
               <p>Address</p>
             </div>
             <div className="flex flex-col gap-1">
-              <input type="text" placeholder="John Smith, 1234 Elm Street" className="border-[1px] border-gray-500 px-3 py-2 w-[23rem] lg:w-[56rem] rounded-2xl" />
-              <input type="text" placeholder="Apt 46, Springfield, IL 62704, USA" className="border-[1px] border-gray-500 px-3 py-2 w-[23rem] lg:w-[56rem] rounded-2xl" />
+              <input type="text" placeholder="John Smith, 1234 Elm Street" className="border-[1px] border-gray-500 px-3 py-2 w-[23rem] md:w-[46rem] lg:w-[56rem] rounded-2xl" />
+              <input type="text" placeholder="Apt 46, Springfield, IL 62704, USA" className="border-[1px] border-gray-500 px-3 py-2 w-[23rem] md:w-[46rem] lg:w-[56rem] rounded-2xl" />
             </div>
           </div>
 
@@ -198,7 +198,7 @@ function Checkout() {
                       <img src={card} alt="card-logo" className='w-10 bg-black h-6 p-0' />
                     </div>
                     <div>
-                      <input type="text" placeholder='**** **** **** 9947' className="border-[1px] border-gray-500 py-1 rounded-l-none rounded-md px-3 w-72 lg:w-44 outline-none" />
+                      <input type="text" placeholder='**** **** **** 9947' className="border-[1px] border-gray-500 py-1 rounded-l-none rounded-md px-3 w-72 md:w-[42rem] lg:w-44 outline-none" />
                     </div>
                   </div>
                   <div className='lg:hidden flex items-center'>
@@ -206,7 +206,7 @@ function Checkout() {
                       <img src={giftcard} alt="card-logo" className='w-10 bg-black h-6 p-0' />
                     </div>
                     <div>
-                      <input type="text" placeholder='1 578 938 221' className="border-[1px] border-gray-500 py-1 rounded-l-none rounded-md px-3 w-72 lg:w-44 outline-none" />
+                      <input type="text" placeholder='1 578 938 221' className="border-[1px] border-gray-500 py-1 rounded-l-none rounded-md px-3 w-72  md:w-[42rem]  lg:w-44 outline-none" />
                     </div>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ function Checkout() {
               <button className='bg-orange-600 px-4 py-3 font-semibold'>Subscribe</button>
             </div>
           </div>
-          <div className='flex justify-center -translate-y-10'>
+          <div className='flex lg:hidden justify-center -translate-y-10'>
             <img src={touch} alt="touchId" className='w-40 cursor-pointer' />
           </div>
         </div>

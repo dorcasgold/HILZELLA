@@ -7,12 +7,12 @@ import logo from '../assets/Hilzella.svg'
 function Navbar() {
   return (
     <>
-      <div className='h-6  hidden lg:block'>
+      <div className='h-6  hidden md:block'>
         <img src={banner} alt="banner" className="w-ful" />
       </div>
-      <nav className="px-10 py-3 mt-10 hidden lg:block">
+      <nav className="px-10 py-3 mt-10 hidden md:block">
 
-        <div className="flex justify-between items-center mx-28 h-12">
+        <div className="flex justify-between items-center lg:mx-28 mx-20 h-12">
           <div className='w-32'>
             <NavLink to="/">
               <LazyLoadImage
