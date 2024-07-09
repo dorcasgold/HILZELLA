@@ -101,7 +101,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className='flex justify-between border-[1px] border-gray-600 py-3 px-5'>
+      <div className='flex lg:hidden justify-between border-[1px] border-gray-600 py-3 px-5'>
         <NavLink to='/'>
           <img src={home} alt="home-icon" className='w-8' />
         </NavLink>
