@@ -18,10 +18,14 @@ import tb2 from '../../assets/products/Tb2.svg'
 import tb3 from '../../assets/products/Tb3.svg'
 import tb5 from '../../assets/products/Tb5.svg'
 import tb8 from '../../assets/products/Tb8.svg'
+import banner from '../../assets/banner2.svg'
 
 function Products() {
   return (
     <div className="lg:mx-44 overflow-x-hidden">
+      <div className='md:hidden'>
+        <img src={banner} alt="banner" />
+      </div>
       <div className="flex flex-col gap-1">
         <div className="border-b-[1px] border-b-gray-500">
           <p className="lg:text-2xl text-lg font-semibold py-2 px-1">Top Products</p>
@@ -30,7 +34,7 @@ function Products() {
         <div className="lg:flex w-full justify-between my-2 items-center grid grid-cols-2 gap-x-2 mx-1">
           <div className=' relative'>
             <p className='orange text-white px-2 border-black rounded border-2 py-1 text-xs text-center absolute z-50 translate-x-10 md:translate-x-36 lg:translate-x-0'>NEW</p>
-            <div className='lg:w-28 w-16 group '>
+            <div className='lg:w-28 w-14 group '>
               <LazyLoadImage
                 alt="Product"
                 src={tp1}
@@ -48,17 +52,17 @@ function Products() {
             </div>
           </div>
           <div>
-            <div className='lg:w-28 w-16 group'>
+            <div className='lg:w-28 w-14 group'>
               <LazyLoadImage
                 alt="Product"
                 src={tp2}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-14 md:translate-x-40 lg:translate-x-0'
+                className='transition-transform translate-y-5 duration-500 ease-in transform group-hover:scale-110 translate-x-14 md:translate-x-40 lg:translate-x-5'
               />
             </div>
             <div className='flex gap-1 py-1 md:translate-x-20 lg:translate-x-0'>
               <img src={imStock} alt="imStock" className='w-4' />
-              <p className='lg:text-sm md:text-lg font-medium'>10 Inch Android 9 Tablet</p>
+              <p className='lg:text-sm md:text-lg text-xs font-bold'>10 Inch Android 9 Tablet</p>
             </div>
             <div className=' text-center py-1'>
               <p className=' font-semibold'>$1199</p>
@@ -89,12 +93,12 @@ function Products() {
                 alt="Product"
                 src={tp4}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-14 md:translate-x-40 lg:translate-x-0'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-y-5 translate-x-14 md:translate-x-40 lg:translate-x-8'
               />
             </div>
-            <div className='flex gap-1 py-1 md:translate-x-20 lg:translate-x-0'>
+            <div className='flex gap-1 py-1 md:translate-x-20 lg:-translate-x-3'>
               <img src={imStock} alt="imStock" className='w-4' />
-              <p className='lg:text-sm md:text-lg font-medium'>Samsung Galaxy A05</p>
+              <p className='lg:text-sm md:text-lg text-xs font-medium'>Samsung Galaxy A05</p>
             </div>
             <div className=' text-center py-1'>
               <p className=' font-semibold'>$89</p>
@@ -116,7 +120,7 @@ function Products() {
                 alt="Product"
                 src={p1}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-8 md:translate-x-24'
               />
             </div>
             <div className='flex gap-1 py-1 translate-x-2  md:translate-x-5 lg:translate-x-3'>
@@ -134,7 +138,7 @@ function Products() {
                 alt="Product"
                 src={p2}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-8 md:translate-x-24 lg:translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1 translate-x-2 md:translate-x-5 lg:translate-x-3'>
@@ -152,12 +156,13 @@ function Products() {
                 alt="Product"
                 src={p3}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-8 md:translate-x-24 lg:translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
               <img src={imStock} alt="imStock" className='w-4' />
-              <p className='text-sm font-medium'>Samsung Galaxy S24 Plus</p>
+              <p className='text-sm sm:text-xs font-medium hidden md:block'>Samsung Galaxy S24 Plus</p>
+              <p className='text-sm sm:text-xs font-medium md:hidden'>Samsung Galaxy S24</p>
             </div>
             <div className=' text-center py-1'>
               <p className=' font-semibold'>$105</p>
@@ -170,10 +175,10 @@ function Products() {
                 alt="Product"
                 src={p4}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:-translate-x-2'
               />
             </div>
-            <div className='flex gap-1 py-1'>
+            <div className='flex gap-1 py-1 lg:-translate-x-5'>
               <img src={imStock} alt="imStock" className='w-4' />
               <p className='text-sm font-medium'>Bontel Boom 800</p>
             </div>
@@ -193,7 +198,7 @@ function Products() {
                 alt="Product"
                 src={tp4}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
+                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-8 md:translate-x-24 lg:translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -276,7 +281,7 @@ function Products() {
                 alt="Product"
                 src={tb1}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
+                className='transition-transform  translate-y-8 duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -312,7 +317,7 @@ function Products() {
                 alt="Product"
                 src={tb3}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
+                className='transition-transform  translate-y-5 duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
@@ -330,7 +335,7 @@ function Products() {
                 alt="Product"
                 src={tp2}
                 effect="blur"
-                className='transition-transform duration-500 ease-in transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
+                className='transition-transform duration-500 ease-in translate-y-8 transform group-hover:scale-110 translate-x-4 md:translate-x-24 lg:translate-x-4'
               />
             </div>
             <div className='flex gap-1 py-1'>
