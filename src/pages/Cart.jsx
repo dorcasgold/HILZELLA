@@ -18,7 +18,7 @@ function Cart() {
   const [count3, setCount3] = useState(2)
   return (
     <div className="flex flex-col overflow-x-hidden">
-      <div className='orange md:px-4 w-full h-16 '>
+      <div className='orange  lg:flex hidden px-4 w-full h-16'>
         <div className=' flex lg:mx-28 md:mx-0 gap-0 md:gap-4 items-center'>
           <div className='md:bg-black text-white flex justify-center items-center px-1 md:px-[26px] h-16'>
             <img src={list} alt="list-icon" className="block w-8" />
