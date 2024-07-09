@@ -87,8 +87,8 @@ function Cart() {
                 <div>
                   <img src={lipstick} alt="lipstick-img" className="w-20" />
                 </div>
-                <div className="w-40">
-                  <p className="text-gray-500 font-semibold">Avon True Matte Lipstick-Peach coral</p>
+                <div className="lg:w-40 w-full">
+                  <p className="lg:text-gray-500 text-black font-semibold">Avon True Matte Lipstick-Peach coral</p>
                   <p className="text-xs text-gray-500">Product Code: <span className="text-black font-semibold">560203</span></p>
                 </div>
               </div>
@@ -120,8 +120,8 @@ function Cart() {
                 <div>
                   <img src={tp1} alt="product-img" className="w-20" />
                 </div>
-                <div className="w-40">
-                  <p className="text-gray-500 font-semibold">Apple Iphone 15 Pro-Black</p>
+                <div className="lg:w-40 w-full">
+                  <p className="lg:text-gray-500 text-black font-semibold">Apple Iphone 15 Pro-Black</p>
                 </div>
               </div>
               <div className="gap-32 md:flex hidden items-center">
@@ -152,8 +152,8 @@ function Cart() {
                 <div>
                   <img src={scale} alt="lipstick-img" className="w-20" />
                 </div>
-                <div className="w-40">
-                  <p className="text-gray-500 font-semibold">Digital Kitchen Scale</p>
+                <div className="lg:w-40 w-full">
+                  <p className="lg:text-gray-500 text-black font-semibold">Digital Kitchen Scale</p>
                 </div>
               </div>
               <div className="md:flex hidden gap-32 items-center">
